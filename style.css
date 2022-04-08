@@ -1,0 +1,292 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+.container{
+    width: 90%;
+    margin: 0px auto;
+    min-height: 100%;
+   
+}
+.d-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.header{
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    box-shadow: 0px 0px 10px black;
+    
+}
+.logo-link{ 
+    color: black;
+    font-size: x-large;
+    text-transform: uppercase;
+    font-weight: bold;
+   
+
+} 
+span{
+    color: rgb(112, 131, 44);
+    text-transform: uppercase;
+}
+.menu-link{
+    color: black;
+    font-size: medium;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-variant: small-caps;
+   
+}
+.menu-link:hover{
+    color:rgb(112, 131, 44) ;
+    border-bottom: 1px solid rgb(112, 131, 44);
+    content: '';
+    transition: 0.3s;
+    
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu{
+    width: 50%;
+    
+}
+.section{
+    height: 100vh;
+    
+}
+#home{
+    background-color: aqua;
+    background-image: url('./bg1.jpg');
+    background-size: cover;
+    position: relative;
+    
+}
+.button{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(112, 131, 44);
+    font-weight: bold;
+    text-decoration: none;
+    background-color: rgb(234, 236, 232);
+    border: 1px solid rgb(112, 131, 44);
+    user-select: none;
+    outline: none; 
+    padding: 10px 13px;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    position: absolute; 
+    bottom: 15px; 
+    left: 30px;
+} 
+.button:hover{
+    color: white;
+    background-color: rgb(112, 131, 44) ;
+    content: '';
+    transition: 0.3s;
+}
+html{
+    scroll-behavior: smooth;
+}
+#about{
+    background-color: rgb(255, 255, 255); 
+}
+.picture{
+   
+    height: 475px;
+    width: 400px;
+    background-image: url('./about1.png');
+    background-repeat: no-repeat;
+    background-position-x: -160px;
+    position: absolute;
+    margin-left: 10px;
+
+}
+.picture::before{
+ 
+    position: absolute;
+    content: '';
+    right: 20px;
+    top: -25px;
+    border: 8px double rgb(112, 131, 44);
+    width: 100%;
+    height: 100%;
+  
+}
+ .about-text{ 
+   
+    margin-left: 600px;
+}
+.about-text h2{
+color: black;
+font-size: x-large;
+text-transform: uppercase;
+font-weight: 900;
+padding-bottom: 25px;
+}
+.about-text p{
+    color: black;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 700;
+    
+    
+}
+.about-text a{
+    background: white;
+    border:1px solid rgb(112, 131, 44);
+    color: rgb(112, 131, 44);
+    padding: 7px 15px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+} 
+.about-text a:hover{
+    color: white;
+    background-color: rgb(112, 131, 44) ;
+    content: '';
+    transition: 0.3s;
+}
+#works{
+    background-color: azure;
+    background-image: url('./bg2.png');
+    background-size: cover;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-attachment: fixed;
+}
+ .content_image{
+        height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .image{
+        width: 30%;
+        height: 60vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        outline: 8px solid rgb(112, 131, 44);
+    }
+    .image:nth-child(1) {
+        background-image: url('./project1.png');
+    }
+    .image:nth-child(2) {
+        background-image: url('./project2.png');
+    }
+    .image:nth-child(3) {
+        background-image: url('./project3.png');
+    }
+    .image:nth-child(1):before{
+        content: 'My Project';
+        font-size: xx-large;
+        color: white;
+        font-weight: bolder;
+        background-color: rgb(112, 131, 44);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: -100%;
+        left: 0px;
+        transition-property: all;
+        transition-duration: 0.7s;
+    }
+    .image:hover::before{
+        top: 0px;
+    }
+    .image:nth-child(2):before{
+        content: 'My Project';
+        font-size: xx-large;
+        color: white;
+        font-weight: bolder;
+        background-color: rgb(112, 131, 44);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0px;
+        left: -100%;
+        transition-property: all;
+        transition-duration: 0.7s;
+    }
+    .image:hover::before{
+        left: 0px;
+    }
+    .image:nth-child(3):before{
+        content: 'My Project';
+        font-size: xx-large;
+        color: white;
+        font-weight: bolder;
+        background-color: rgb(112, 131, 44);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: +100%;
+        left: 0px;
+        transition-property: all;
+        transition-duration: 0.7s;
+    }
+    .image:hover::before{
+        top: 0px;
+    }
+
+#contact{
+    background-color: rgb(255, 255, 255);
+    height: 95vh;
+    position: relative;
+    
+}
+.text{
+    display: flex;
+    color: black;
+    font-size: large;
+    line-height: 25px;
+    font-weight: bold;
+    width: 40%;
+
+}
+.map{
+    display: flex;
+   position: absolute;
+   bottom: 80px;
+   right: 60px;
+   width: 60%;
+   height: 70%;
+}
+.footer{
+ 
+    display: flex;
+    text-align: center;
+}
+.copyright{
+    color: black;
+    font-size: small;
+    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif;
+    bottom: 15px;
+    
+}
+
+
